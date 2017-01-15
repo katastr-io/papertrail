@@ -1,0 +1,10 @@
+files:
+  - /opt/katastr.io/etl-*/logs/src_ruian/*.log
+  - /opt/katastr.io/etl-*/logs/api_monitor/*.log
+exclude_patterns:
+  - inflating
+  - existing layer
+destination:
+  host: logs5.papertrailapp.com
+  port: 10746
+  protocol: tls
